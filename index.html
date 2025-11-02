@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niya C V - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Niya C V</div>
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <nav id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="greeting-section">
+    <p id="greeting" class="greeting-text"></p>
+    <p class="intro-tagline">
+      Welcome to My Portfolio! I’m <strong class="nowrap">Niya&nbsp;C&nbsp;V</strong>
+    </p>
+    <p class="intro-subtext">
+      Aspiring Software Developer | Web Development Projects Experience | Java | Python | C
+    </p>
+    <a href="#skills" class="explore-btn">Explore More</a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Niya C V</strong>, an aspiring Software Developer passionate about creating clean, responsive, and dynamic web applications.
+      I hold an MCA from SCMS School of Engineering & Technology and have hands-on experience in HTML, CSS, JavaScript, PHP, Python, and MySQL.
+      My academic projects and IIT Kharagpur NPTEL certifications in Cloud Computing and IoT reflect my commitment to learning and innovation in technology.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-category">
+      <h3>Programming Languages</h3>
+      <ul class="skills-list">
+        <li>C</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+      </ul>
+      <p class="skills-note">Proficient in Object-Oriented Programming (OOP) concepts.</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Web Development</h3>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+      </ul>
+      <p class="skills-note">Experience in building responsive and interactive web applications.</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Databases</h3>
+      <ul class="skills-list">
+        <li>MySQL</li>
+        <li>MongoDB</li>
+      </ul>
+      <p class="skills-note">Capable of designing and managing relational and non-relational databases.</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Additional Tools</h3>
+      <ul class="skills-list">
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>REST APIs</li>
+        <li>Flask (Python)</li>
+      </ul>
+      <p class="skills-note">Version control, basic API handling, and Python web framework experience.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="images/pic 1.png" alt="Fetal Health Prediction System Screenshot">
+        <h3>Fetal Health Prediction System</h3>
+        <p>
+          Created a web-based system using Flask and MongoDB to predict fetal health status from CTG data and implemented SHAP for identifying key features influencing the prediction. Built with HTML5, CSS3, JavaScript, and Bootstrap.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/pic 2.png" alt="College Canteen Management System Screenshot">
+        <h3>College Canteen System</h3>
+        <p>
+          Developed a web-based application to streamline college canteen operations by enabling real-time menu display, food order placement, order customization and efficient management using PHP, MySQL, HTML5, CSS3, JavaScript, and Bootstrap.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/pic 3.png" alt="Click-Through Rate Prediction System Screenshot">
+        <h3>Click-Through Rate System</h3>
+        <p>
+          Implemented a machine learning model to predict ad click-through rates using algorithms like Logistic Regression, Decision Tree, and Random Forest. Compared model accuracy to identify the best-performing algorithm using the Avazu dataset.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <span id="nameError" class="error-message"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <span id="emailError" class="error-message"></span>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Send Message</button>
+      <p id="successMessage" class="success-message"></p>
+    </form>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <footer>
+    <p>© 2025 Niya C V | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
